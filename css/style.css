@@ -65,6 +65,11 @@ section {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
+
+hr.line {
+    opacity: 0.1;
+    width: 90%;
+}
 /* General Styling Ends*/
 
 
@@ -170,6 +175,26 @@ header {
 }
 .nav__link:hover {
     color: var(--clr-accent);
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .button-lines {
+    transform: rotate(.625turn);
+}
+
+.nav-open .button-lines::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .button-lines::after {
+    opacity: 0;
 }
 /* Header ends */
 
