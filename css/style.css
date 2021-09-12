@@ -461,7 +461,7 @@ header {
 
 .blog-img{
     width: 100%;
-    height: 200px;
+    height: auto;
 }
 
 .content-section .card a{
