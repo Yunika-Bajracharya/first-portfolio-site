@@ -15,6 +15,7 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #D79771;
+    --clr-dark-accent: #3b3632;
 
     --fs-h1: 3.25rem;
     --fs-h2: 2.5rem;
@@ -68,7 +69,7 @@ section {
 
 hr.line {
     opacity: 0.1;
-    width: 90%;
+    width: 94%;
 }
 /* General Styling Ends*/
 
@@ -281,7 +282,9 @@ header {
 .about-me {
     background-color: var(--clr-dark);
     background-image: url(../img/about-bg.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     background-blend-mode: lighten;
     opacity: 0.9;
     color: var(--clr-light);
@@ -308,6 +311,112 @@ header {
 .section__title--education {
     color:var(--clr-accent);
     position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+ 
+.timeline-body{
+    position: relative;
+    background-color: var(--clr-dark-accent);
+    margin-left: 100px;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 0;
+    /* opacity: 1; */
+}
+
+/* margin line */
+.timeline-body::after {
+    content: '';
+    width: 4px;
+    height: 100%;
+    background-color: var(--clr-accent);
+    position: absolute;
+    left: -4px;
+    top: 0;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-item::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid var(--clr-accent);
+    background-color: var(--clr-dark);
+    position: absolute;
+    left: -16px;
+    top: 4px;
+    z-index: 9;
+}
+
+.time {
+    position: absolute;
+    left: -139px;
+    top: 4px;
+    opacity: .6;
+    font-size: 13px;
+}
+
+.content {
+    margin: 35px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #746a62;
+}
+ 
+.education-section__link {
+    color: var(--clr-light);
+}
+
+.involvements-date {
+    opacity: .6;
+    font-size: 15px;
+    float: right;
+}
+
+.education-section__link:hover {
+    color: var(--clr-accent);
+}
+
+.grade {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+}
+
+.gpa {
+    float: right;
+}
+
+.involvement {
+    opacity: .6;
+    text-shadow: 1px;
+    text-decoration: underline rgb(85, 83, 83);
+    font-size: 16px;
+    /* text-underline-position: under; */
+}
+
+.list-style {
+    list-style-type: initial;
+    opacity: .9;
+    margin-bottom: 6px;
+}
+/* Education Ends */
+
+@media (max-width: 950px) {
+    .about-me {
+        background: var(--clr-dark);
+        background-blend-mode: lighten;
+        opacity: 0.9;
+        color: var(--clr-light);
+    }
 }
 
 @media (min-width: 800px) {
@@ -322,7 +431,7 @@ header {
 }
 /* Footer */
 .footer {
-    background: #4A403A;
+    background: var(--clr-dark-accent);
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
