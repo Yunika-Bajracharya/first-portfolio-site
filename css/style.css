@@ -442,10 +442,63 @@ header {
 }
 /* Experience Section Ends */
 
+.row {
+    width: 85%;
+    margin: auto;
+}
 
-/* Writings Begin */
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
 
+.content-section .card {
+    flex: 1;
+    margin: 40px 20px;
+}
+
+.blog-img{
+    width: 100%;
+    height: 200px;
+}
+
+.content-section .card a{
+    text-decoration: none;
+    color: var(--clr-light);
+}
+
+.content-section .card a:hover{
+    opacity: .2;
+    color: var(--clr-accent);
+}
+
+.content-section .card a img:hover{
+    opacity: .2;
+}
+
+.content-section .card h4 {
+    margin-top: 20px;
+    font-weight: var(--fw-bold);
+}
+
+.content-section .card p {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-style: italic;
+}
 /* Writings End */
+
+
+/* Responsiveness for blog begins*/
+@media screen and (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+    }
+}
+/* Responsiveness for blog ends*/
+
 
 @media (max-width: 950px) {
     .about-me {
