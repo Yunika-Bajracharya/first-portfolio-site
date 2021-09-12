@@ -371,7 +371,11 @@ header {
     padding-bottom: 15px;
     border-bottom: 1px dashed #746a62;
 }
- 
+
+.title {
+    letter-spacing: 1.5px;
+}
+
 .education-section__link {
     color: var(--clr-light);
 }
@@ -410,6 +414,39 @@ header {
 }
 /* Education Ends */
 
+
+/* Experience Section Begins */
+.container {
+    margin: 50px auto;
+    width: 65%;
+    padding: 8px;
+}
+
+.experience-img {
+    float: left;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    margin: 0 20px 50px 0;
+}
+
+.text {
+    text-align: left;
+    font-size: var(--fs-body);
+    opacity: .9;
+}
+
+.experience-date {
+    opacity: .8;
+    font-size: 15px;
+}
+/* Experience Section Ends */
+
+
+/* Writings Begin */
+
+/* Writings End */
+
 @media (max-width: 950px) {
     .about-me {
         background: var(--clr-dark);
@@ -429,6 +466,8 @@ header {
         margin-left: 2px;
     }
 }
+
+
 /* Footer */
 .footer {
     background: var(--clr-dark-accent);
