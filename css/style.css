@@ -305,6 +305,12 @@ header {
 /* Education */
 .education {
     background-color: var(--clr-dark);
+    background-image: url(../img/education-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: lighten;
+    opacity: 0.9;
     color: var(--clr-light);
 }
 
@@ -416,6 +422,17 @@ header {
 
 
 /* Experience Section Begins */
+.experience {
+    background-color: var(--clr-dark);
+    background-image: url(../img/experience-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: lighten;
+    opacity: 0.9;
+    color: var(--clr-light);
+}
+
 .container {
     margin: 50px auto;
     width: 65%;
@@ -442,6 +459,18 @@ header {
 }
 /* Experience Section Ends */
 
+
+/* Writing Section Begins */
+.my-writings {
+    background-color: var(--clr-dark);
+    background-image: url(../img/writing-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: lighten;
+    opacity: 0.9;
+    color: var(--clr-light);
+}
 .row {
     width: 85%;
     margin: auto;
